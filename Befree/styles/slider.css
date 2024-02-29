@@ -1,0 +1,47 @@
+/* Стили для контейнера слайдера */
+.swiper-container {
+  position: relative; /* Set position to relative */
+  width: 100%;
+  max-width: 700px; /* Ширина слайдера */
+  margin: 0 auto;
+  z-index: 1; /* Задайте более низкий индекс слоя */
+}
+
+/* Стили для слайдов */
+.swiper-slide {
+  text-align: center;
+  padding: 20px;
+  background-color: #a6b9a8; /* Цвет фона слайда */
+  border-radius: 8px; /* Скругленные углы */
+}
+
+/* Стили для кнопок "Next" и "Prev" */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Цвет стрелок */
+  font-size: 18px;
+}
+
+/* Стили для пагинации (точек) */
+.swiper-pagination {
+  position: relative;
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #007bff; /* Цвет активной точки */
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0056b3; /* Цвет неактивных точек */
+}
+
+/* Скрытие дополнительных слайдов */
+.swiper-container {
+  overflow: hidden;
+}

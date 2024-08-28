@@ -1,0 +1,103 @@
+.register-form {
+  z-index: 1000; /* Задайте достаточно высокий индекс слоя */
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e1e1e1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px; /* Максимальная ширина формы, чтобы она не растягивалась слишком сильно */
+  width: 100%; /* Чтобы форма не превышала максимальную ширину при маленьких экранах */
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину блока */
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.show-register-form {
+  cursor: pointer;
+}
+
+.login-input {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #fff;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: rgb(12, 109, 15);
+  color: #fff;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 24px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #e1e1e1;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
